@@ -4,11 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List HTML&jQuery</title>
-    <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
-    <script src="script.js" defer></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script src="../js/script.js" defer></script>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <h1>Hola!</h1>
+    <section>
+      <h2>To-Do List</h2>
+      <p>Use double click for erase the Task</p>
+      <form name="ToDo">
+        <input type="text" name="TaskName" placeholder="Task Name" />
+        <input
+          type="text"
+          name="TaskDescription"
+          placeholder="Describe your task"
+        />
+        <button id="UpTask" type="button">Add Task</button>
+      </form>
+      <div>
+        <ul id="TaskList"></ul>
+      </div>
+    </section>
   </body>
 </html>
