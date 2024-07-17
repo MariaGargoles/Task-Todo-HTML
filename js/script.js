@@ -6,4 +6,7 @@ $(function () {
     var toAdd = taskName + " - " + taskDescription;
     $("#TaskList").append("<li>" + toAdd + "</li>");
   });
+  $("#TaskList").on("dblclick", "li", function (event) {
+    $(this).remove();
+  });
 });

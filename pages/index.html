@@ -4,25 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List HTML&jQuery</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
     <script src="../node_modules/jquery/dist/jquery.min.js" defer></script>
     <script src="../js/script.js" defer></script>
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section>
-      <h2>To-Do List</h2>
-      <p>Use double click for erase the Task</p>
-      <form name="ToDo">
-        <input type="text" name="TaskName" placeholder="Task Name" />
+    <section class="ToDoListContainer">
+      <h2 class="ToDoListContainer__Title">To-Do List</h2>
+      <p class="ToDoListContainer__Text">Use double click to erase the Task</p>
+      <form class="FormTodo" name="ToDo">
         <input
+          class="FormTodo__Input"
+          type="text"
+          name="TaskName"
+          placeholder="Task Name"
+        />
+        <input
+          class="FormTodo__Input"
           type="text"
           name="TaskDescription"
           placeholder="Describe your task"
         />
-        <button id="UpTask" type="button">Add Task</button>
+        <button class="FormTodo__Button" id="UpTask" type="button">
+          Add Task
+        </button>
       </form>
       <div>
-        <ul id="TaskList"></ul>
+        <ul class="TodoList" id="TaskList"></ul>
       </div>
     </section>
   </body>
